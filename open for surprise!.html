@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>surprise!!</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- INTRO SCREEN -->
+    <div id="intro-screen">
+      <div class="intro-content">
+        <h1>HI BABYYYYYYYY!!!</h1>
+        <p>this is erm something i made kasi I'm bored heh... 😼</p>
+        <button onclick="revealSurprise()">
+            <img src="cat_hi.gif" alt="Smiley face" width="145" height="120" style="vertical-align:middle">
+            <div class="intro-hidden"><h2>click the cat plsplsplspls</h2></div>
+        </button>
+        <div class="spotify-embed">
+            <iframe style="border-radius:12px" 
+            src="https://open.spotify.com/embed/track/7B3z0ySL9Rr0XvZEAjWZzM?utm_source=generator" 
+            width="100%" height="80" frameBorder="0" allowfullscreen="" 
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  
+    <!-- SURPRISE -->
+    <div class="surprise-container" style="display: none;">
+      <h1>AYO DAS CRAZY</h1>
+      <div class="surprises">
+        <div class="surprise1" onclick="pickSurprise(this)"><img src="cat_fl.jpg" width="90" height="80" style="vertical-align:middle"></div>
+        <div class="surprise1" onclick="pickSurprise(this)"><img src="cat_HEH.jpg" width="90" height="80" style="vertical-align:middle"></div>
+        <div class="surprise1" onclick="pickSurprise(this)"><img src="cat_smk.jpg" width="90" height="80" style="vertical-align:middle"></div>
+        <div class="surprise1" onclick="pickSurprise(this)"><img src="cat_wink.jpg" width="90" height="80" style="vertical-align:middle"></div>
+        <div class="surprise1" onclick="pickSurprise(this)"><img src="yippee.gif" width="90" height="80" style="vertical-align:middle"></div>
+        <div class="surprise1" onclick="pickSurprise(this)"><img src="cat_bq.jpg" width="90" height="80" style="vertical-align:middle"></div>
+      </div>
+      <p id="message"></p>
+      <button id="reset-btn" onclick="resetSurprises()">Try Again ?</button>
+      <button id="back-btn" onclick="goBackToIntro()">⬅️back</button>
+
+    </div>
+  
+    <script src="script.js"></script>
+  </body>
+  
+</html>
